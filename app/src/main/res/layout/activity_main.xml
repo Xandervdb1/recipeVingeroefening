@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#312F2F"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="777dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="0sp"
+        android:src="@drawable/zachtewafeltjes"
+        app:layout_constraintBottom_toTopOf="@id/recipe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/hammersmith_one"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="ZACHTE WAFELS \nvoor 4 personen"
+        android:textAlignment="center"
+        android:textColor="#F6E8EA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/min"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="-"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toRightOf="@id/recipe"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plus" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="+"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toRightOf="@id/recipe"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/francois_one"
+        android:text="300 g zelfrijzende bloem \n2 st eieren \n1.2 snuifje zout \n100 g boter \n75.2 g suiker \n250 ml melk"
+        android:textColor="#F6E8EA"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/plus"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <ScrollView
+        android:layout_width="0sp"
+        android:layout_height="380sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/francois_one"
+            android:scrollHorizontally="false"
+            android:text="1. Klop de gesmolten boter op met de suiker en het zout, voeg de eieren 1 voor 1 toe en de helft van de melk \n\n2. Spatel de bloem erdoor en de rest van de melk tot je een egaal beslag hebt \n\n3. Laat het deeg 15 min rusten, verwarm ondertussen je wafelijzer \n\n4. Smeer de platen in met zonnebloemolie en verdeel het deeg met een houten of plastieken spatel \n\n5. Laat de wafel 4 min bakken op de medium stand voor een mooie goudbruine wafel"
+            android:textColor="#F6E8EA"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recipe"
+            app:layout_constraintVertical_bias="0.285"
+            app:layout_constraintWidth_percent="0.8" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
